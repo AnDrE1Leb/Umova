@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/select.css">
+</head>
+<body>
+    <main>
+        <div class="main__content">
+            <h1 class="main__title">Reach Out and <span>Connect</span> With Us</h1>
+            <h2 class="main__subtitle">Bridging Your Ideas with Our Expertise</h2>
+            <form class="form" id="form" action="sendmail.php" enctype="multipart/form-data" method="POST" autocomplete="off">
+                <fieldset class="form__fields">
+                    <label>
+                        <input type="text" class="name _req" name="name" placeholder="Name *">
+                        <p class="empty__message">The field cannot be empty</p>
+                    </label>
+                    <label>
+                        <input type="text" class="mail _req _email" name="mail" placeholder="E-mail *">
+                        <p class="empty__message">The field cannot be empty</p>
+                        <p class="empty__message__email">E-mail is not valid</p>
+                    </label>
+                    <label>
+                        <input type="tel" class="tel _req" name="phone" placeholder="Phone *">
+                        <p class="empty__message">The field cannot be empty</p>
+                        <p class="empty__message__phone">Phone number is not valid</p>
+                    </label>
+                    <label class="password__label">
+                        <input id="Password" type="password" class="password _req" name="password" placeholder="Password *">
+                        <figure id="Eye">
+                            <img class="eye__on" src="img/eye_on.svg" alt="">
+                            <img class="eye__off" src="img/eye_off.svg" alt="">
+                        </figure>
+                        <p class="empty__message">The field cannot be empty</p>
+                    </label>
+                    <label>
+                        <select name="city" class="form__select">
+                            <option value="New Jersey" selected>New Jersey</option>
+                            <option value="New Mexico">New Mexico</option>
+                            <option value="New York">New York</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset class="form__controls">
+                    <div class="checkbox">
+                        <input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input _req">
+                        <label for="formAgreement" class="checkbox__label"><span>I have read and accepted <a href="##">privacy policy</a></span></label>
+                        <p class="empty__message">You must confirm to continue</p>
+                    </div>
+                    <div class="form__btn">
+                        <button class="send-form">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/select.js"></script>
+</body>
+</html>
